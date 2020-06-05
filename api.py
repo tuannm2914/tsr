@@ -110,5 +110,4 @@ def normalize_text(lines):
     return new_str
 
 if __name__ == "__main__" :
-    http_server = WSGIServer(('', 8083), app)
-    http_server.serve_forever()
+    app.run(debug=True)
